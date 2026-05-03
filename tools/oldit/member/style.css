@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0 0px;
+  margin: 0 0px;
+}
+ div {
+ padding: 0 0px;
+  margin: 0 0px;
+  }
+
+h1 {
+  color: #4CAF50;
+}
+ p.special-font {
+    color: darkblue;
+    font-family: "keifont", sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 1.8; 
+    text-align: center;
+}
+ .down_id {
+ color: #CCCCCC;
+ font-family: Arial, sans-serif;
+ font-size: 10px;
+ padding: 0 0px;
+ text-align: left;
+ margin: 0 0px;
+ }
+ .down_2 {
+ color: #757575;
+ font-family: Arial;
+ font-size: 10px;
+ padding: 0 20px;
+ text-align: left;
+ margin: 0 0px;
+ }
+
+@font-face {
+    font-family: 'keifont'; /* 任意のフォント名 */
+    src: url('../fonts/keifont.ttf') format('truetype'); /* .ttf ファイルを追加 */
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+    a {
+    font-family: "keifont", sans-serif;
+    }
+    
+    html {
+      margin: 0; 
+      padding: 0 0;
+    }
+p {
+            font-family: "keifont", sans-serif;
+            font-size: 20px;
+            padding: 0 0px;
+            margin: 0 0px;
+            color: black;
+            line-height: 1.8; 
+            text-align: center;
+        }
+        h1 {
+            font-family: "keifont", "Arial Black", sans-serif;
+            color: #4EB3ED;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ナビゲーションバーのスタイル */
+        nav {
+            background-color: #4FB3ED;
+            padding: 0;
+            position: fixed; /* 画面に固定 */
+            top: 0; /* 上端に配置 */
+            width: 100%; /* 幅を100%に */
+            z-index: 1000; /* 他の要素より前面に表示 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0 0;
+            display: flex; /* 横並びにする */
+            justify-content: center; /* 中央寄せ */
+            align-items: center; /* 垂直方向中央 */
+            height: 65px; /* ナビバーの高さ */
+        }
+
+        nav li a {
+            display: block; /* リンク全体をブロック要素に */
+            color: white;
+            text-align: center;
+            padding: 20px 18px;
+            text-decoration: none;
+            font-family: Arial, sans-serif; /* ナビバーのフォント */
+            height: 100%; /* 親要素の高さに合わせる */
+            display: flex;
+            align-items: center; /* リンクテキストを垂直方向中央に */
+        }
+
+        nav li a:hover {
+            background-color: #418EBA; /* ホバー時の背景色 (少し暗いLightBlue) */
+            color: black;
+        }
+
+        /* special-font クラスのスタイル */
+        .special-font {
+            font-family: "Arial", sans-serif; /* 「arial」から変更 */
+            font-size: 20px;
+            color: darkblue;
+            font-weight: bold;
+        }
+        u {
+            text-decoration: underline;
+            text-decoration-color: white; /* ここで下線の色を指定します */
+        }
+                .banner-image {
+    width: 100%; /* 親要素の幅に合わせて表示 */
+    height: auto; /* アスペクト比を維持 */
+    display: block; /* 下部の余白をなくす */
+    margin-bottom: 20px; /* バナーの下にスペース */
+    text-align: center;
+}
+        h2 {
+        padding: 0 20px;
+        text-align: center;
+       }
+       h3 {
+        padding: 0 20px;
+        text-align: center;
+       }
+       img {
+       align: center;
+       }
+       
