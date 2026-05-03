@@ -8,7 +8,7 @@ body {
  padding: 0 0px;
   margin: 0 0px;
   }
-      a {
+    a {
   color: green;
   font-weight: bold;
   margin: 10 25px;
@@ -51,7 +51,7 @@ h1 {
 
 @font-face {
     font-family: 'keifont'; /* 任意のフォント名 */
-    src: url('../fonts/keifont.ttf') format('truetype'); /* .ttf ファイルを追加 */
+    src: url('./fonts/keifont.ttf') format('truetype'); /* .ttf ファイルを追加 */
     font-weight: normal;
     font-style: normal;
     }
@@ -102,8 +102,8 @@ p {
 
         nav li a {
             display: block; /* リンク全体をブロック要素に */
-            border-radius: 15px;
             color: white;
+            border-radius: 15px;
             text-align: center;
             padding: 20px 18px;
             text-decoration: none;
@@ -147,7 +147,7 @@ p {
        img {
        align: center;
        }
-                     .nav-animation2 a {
+              .nav-animation2 a {
   text-decoration: none;
   color: #fffff;
   font-weight: bold;
