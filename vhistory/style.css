@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0 0px;
+  margin: 0 0px;
+  background-color: #EEFFED;
+}
+ div {
+ padding: 0 0px;
+  margin: 0 0px;
+  }
+    a {
+  color: green;
+  font-weight: bold;
+  margin: 10 25px;
+  }
+  a:hover { /* 上に5px移動 */
+  color: #009425;
+  border-bottom: 2px solid #009425;
+  }
+  a:hover:after {
+  width:100%;
+  }
+h1 {
+  color: #4CAF50;
+}
+ p.special-font {
+    color: darkblue;
+    font-family: "keifont", sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 1.8; 
+    text-align: center;
+}
+ .down_id {
+ color: #CCCCCC;
+ font-family: Arial, sans-serif;
+ font-size: 10px;
+ padding: 0 0px;
+ text-align: left;
+ margin: 0 0px;
+ }
+ .down_2 {
+ color: #757575;
+ font-family: Arial;
+ font-size: 10px;
+ padding: 0 20px;
+ text-align: left;
+ margin: 0 0px;
+ }
+
+@font-face {
+    font-family: 'keifont'; /* 任意のフォント名 */
+    src: url('../fonts/keifont.ttf') format('truetype'); /* .ttf ファイルを追加 */
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+    a {
+    font-family: "keifont", sans-serif;
+    }
+    
+    html {
+      margin: 0; 
+      padding: 0 0;
+    }
+p {
+            font-family: "keifont", sans-serif;
+            font-size: 20px;
+            padding: 0 0px;
+            margin: 0 0px;
+            color: black;
+            line-height: 1.8; 
+            text-align: center;
+        }
+        h1 {
+            font-family: "keifont", "Arial Black", sans-serif;
+            color: #4EB3ED;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ナビゲーションバーのスタイル */
+        nav {
+            background-color: green;
+            padding: 0;
+            position: fixed; /* 画面に固定 */
+            top: 0; /* 上端に配置 */
+            width: 100%; /* 幅を100%に */
+            z-index: 1000; /* 他の要素より前面に表示 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0 0;
+            display: flex; /* 横並びにする */
+            justify-content: center; /* 中央寄せ */
+            align-items: center; /* 垂直方向中央 */
+            height: 65px; /* ナビバーの高さ */
+        }
+
+        nav li a {
+            display: block; /* リンク全体をブロック要素に */
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            padding: 20px 18px;
+            text-decoration: none;
+            font-family: Arial, sans-serif; /* ナビバーのフォント */
+            height: 100%; /* 親要素の高さに合わせる */
+            display: flex;
+            align-items: center; /* リンクテキストを垂直方向中央に */
+        }
+
+        nav li a:hover {
+            background-color: #0ACC14; /* ホバー時の背景色 (少し暗いLightBlue) */
+            color: black;
+        }
+
+        /* special-font クラスのスタイル */
+        .special-font {
+            font-family: "Arial", sans-serif; /* 「arial」から変更 */
+            font-size: 20px;
+            color: darkblue;
+            font-weight: bold;
+        }
+        u {
+            text-decoration: underline;
+            text-decoration-color: white; /* ここで下線の色を指定します */
+        }
+                .banner-image {
+    width: 100%; /* 親要素の幅に合わせて表示 */
+    height: auto; /* アスペクト比を維持 */
+    display: block; /* 下部の余白をなくす */
+    margin-bottom: 20px; /* バナーの下にスペース */
+    text-align: center;
+}
+        h2 {
+        padding: 0 20px;
+        text-align: center;
+       }
+       h3 {
+        padding: 0 20px;
+        text-align: center;
+       }
+       img {
+       align: center;
+       }
+                     .nav-animation2 a {
+  text-decoration: none;
+  color: #fffff;
+  font-weight: bold;
+  margin: 10 25px;
+  display: inline-block;
+  transition: all 0.3s ease; /* すべてのプロパティを0.3秒で */
+  border-bottom: 2px solid transparent;
+}
+
+.nav-animation2 a:hover {
+  transform: translateY(4px); /* 上に5px移動 */
+  color: #009425;
+  border-bottom: 2px solid #009425;
+}
+.nav-animation2 a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* 初期状態は幅0 */
+  height: 2px;
+  background-color: #E9FFE0;
+  transition: width 0.3s ease; /* 幅の変化にアニメーションを適用 */
+}
+
+.nav-animation2 a:hover::after {
+  width: 100%; /* ホバーで幅を100%に */
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0; /* 最初は非表示 */
+}
+
+/* アニメーションの定義 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); /* 少し下から */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* 通常位置へ */
+  }
+}
